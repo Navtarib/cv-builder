@@ -1,0 +1,166 @@
+Basic Styling
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"); */
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 20px;
+  background-color: white;
+  color: #2c3e50;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+
+form {
+  background-color:rgba(31, 133, 119, 0.15);
+  border-radius: 18px;
+  padding: 35px;
+  max-width: 650px;
+  margin: auto;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.479);
+}
+
+#resume-display {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+  color: #2c3e50;
+}
+
+#resume-display h2 {
+  text-align: center;
+  color: #1a5276;
+  font-weight: 700;
+}
+
+fieldset {
+  border: 1px solid #0d6767;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 20px;
+  background-color: rgba(67, 181, 237, 0.15);
+}
+
+legend {
+  font-weight: 500;
+  color: #2c3e50;
+  padding: 0 12px;
+  font-size: 1.1em;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  color: #34495e;
+  font-weight: 500;
+  font-size: 0.95em;
+}
+
+input,
+textarea {
+  margin-top: 8px;
+  padding: 12px;
+  width: 95%;
+  border: 1px solid #d5dbdb;
+  border-radius: 6px;
+  background-color: #fbfcfc;
+  font-size: 0.95em;
+  color: #34495e;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #2980b9;
+  outline: none;
+  background-color: #ffffff;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  padding: 14px;
+  margin-top: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: white;
+  color:black;
+  border: 2px solid black;
+}
+
+.resume-container {
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.resume-container h3,
+.resume-container h4 {
+  margin-bottom: 10px;
+}
+
+#resume-display img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  display: block;
+  margin: 14px 0 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#resume-display p,
+#resume-display ul {
+  color: #2c3e50;
+  line-height: 1.6;
+  font-size: 1em;
+}
+
+#resume-display ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  margin-top: 10px;
+}
+
+#resume-display {
+  display: none;
+}
+
+@media (max-width: 426px) {
+  #resume-form input {
+    width: 90%;
+  }
+}
+.remove-education,
+.remove-experience {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.remove-education:hover,
+.remove-experience:hover {
+    background-color: #c0392b;
+}
+

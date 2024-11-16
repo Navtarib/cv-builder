@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <h1>Dynamic Resume Builder</h1>
+    <form id="resume-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" placeholder="Enter your address" rows="2"></textarea>
+
+            <label for="image">Upload Image</label>
+            <input type="file" id="image" accept="image/*">
+        </fieldset>
+
+        <fieldset id="education-section">
+            <legend>Education</legend>
+            <div class="education-entry">
+                <label for="degree">Degree</label>
+                <input type="text" class="degree" placeholder="Enter your degree" required>
+                
+                <label for="institution">Institution</label>
+                <input type="text" class="institution" placeholder="Enter your institution" required>
+                
+                <label for="year">Year of Completion</label>
+                <input type="text" class="year" placeholder="Enter your year of completion" required>
+                
+                <label for="grade">Grade/Percentage</label>
+                <input type="text" class="grade" placeholder="Enter your grade/percentage" required>
+                
+                <button type="button" class="remove-education">Delete</button>
+            </div>
+            <button type="button" id="add-education">Add Education</button>
+        </fieldset>
+
+        <fieldset id="experience-section">
+            <legend>Experience</legend>
+            <div class="experience-entry">
+                <label for="job">Job Title</label>
+                <input type="text" class="job" placeholder="What's your job title?" required>
+                
+                <label for="company">Company Name</label>
+                <input type="text" class="company" placeholder="What's your company name?" required>
+                
+                <label for="duration">Duration</label>
+                <input type="text" class="duration" placeholder="What's your work duration?" required>
+                
+                <label for="job-description">Job Description</label>
+                <textarea class="job-description" placeholder="What's your experience?" rows="5" required></textarea>
+                
+                <button type="button" class="remove-experience">Delete</button>
+            </div>
+            <button type="button" id="add-experience">Add Experience</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="skills">Skills</label>
+            <textarea id="skills" placeholder="Enter your skills (comma separated)" rows="5" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Languages</legend>
+            <label for="languages">Languages</label>
+            <textarea id="languages" placeholder="Enter your languages (comma separated)" rows="2"></textarea>
+        </fieldset> 
+
+        <button type="submit"><b>GENERATE</b></button>
+    </form>
+
+    <br>
+
+    <div id="resume-display"></div>
+
+    <script src="assets/main.js"></script>
+</body>
+
+</html>
